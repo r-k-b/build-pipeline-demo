@@ -1,7 +1,9 @@
 const Koa = require('koa')
 const app = new Koa()
+const serve = require('koa-static')
 
-// response
+app.use(serve('./static'))
+
 app.use(ctx => {
   console.info(`Page requested, url: '${ctx.request.url}'`)
   ctx.body = 'Hello Koa'
