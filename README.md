@@ -25,3 +25,5 @@ to tag the docker image.
 (although, tags can be deleted & re-added; they're not immutable...)
 
 (and this doesn't help us determine the commit info from the runtime)
+
+## Is it straightforward to add tls support with Let's Encrypt?
