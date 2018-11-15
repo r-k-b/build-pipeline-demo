@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "repository": "https://github.com/r-k-b/build-pipeline-demo",
   "description": "The web backend of a demo focused on Docker build workflows.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,10 @@
   "dependencies": {
     "koa": "2.6.2",
     "koa-static": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "2.0.46",
+    "@types/koa-static": "4.0.0",
+    "typescript": "3.1.6"
   }
 }

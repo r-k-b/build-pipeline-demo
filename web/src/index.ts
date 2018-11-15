@@ -1,6 +1,6 @@
-const Koa = require('koa')
+import * as Koa from 'koa'
 const app = new Koa()
-const serve = require('koa-static')
+import * as serve from  'koa-static';
 
 app.use(serve('./static'))
 
