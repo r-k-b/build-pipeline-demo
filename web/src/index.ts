@@ -6,7 +6,7 @@ app.use(serve('./static'))
 
 app.use(ctx => {
   console.info(`Page requested, url: '${ctx.request.url}'`)
-  ctx.body = 'Hello Koa'
+  ctx.body = 'Hello from Koa'
 })
 
 app.listen(3000)
