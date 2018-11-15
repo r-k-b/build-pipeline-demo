@@ -1,0 +1,16 @@
+version: '3.7'
+
+# Use this file for improved development & debugging.
+# Because it makes use of bind mounts, you won't need to rebuild the docker images
+# to see changes ― for files read only at app startup, restarting the containers will be enough.
+#
+# For the same reason, it's unsuitable for deployment to Docker Swarm.
+
+services:
+  web:
+    image: rkbenvoy/build-pipeline-demo:latest
+    build:
+      context: ./web/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"

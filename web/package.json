@@ -1,6 +1,7 @@
 {
   "name": "web",
   "version": "1.0.0",
+  "repository": "https://github.com/r-k-b/build-pipeline-demo",
   "description": "The web backend of a demo focused on Docker build workflows.",
   "main": "index.js",
   "scripts": {
