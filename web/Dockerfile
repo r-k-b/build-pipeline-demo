@@ -2,6 +2,8 @@ FROM node:11.1.0-alpine as devDeps
 WORKDIR /code
 COPY . .
 RUN npm install && npx tsc
+WORKDIR /code/frontend
+RUN ../node_modules/elm/bin/elm make src/Main.elm --output ../static/elm.js
 
 # n.b.: just with typescript & two @types packages in dev deps, doing a
 # multistage build results in a 73MB image, vs 123MB (if `--production`
